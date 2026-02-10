@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="hero">
+  <!-- HERO: English text should be LTR to fix punctuation -->
+  <header class="hero" dir="ltr">
     <div class="hero-content container">
       <img class="intel-logo" src="img/intel-header-logo.svg" alt="Intel Logo" />
       <h1 class="hero-title">Sustainability Through the Ages</h1>
       <p class="hero-subtitle">
         Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
+        to innovation has shaped a more sustainable future for technology
         and our planet.
       </p>
     </div>
   </header>
 
-  <section id="timeline" class="timeline-section">
+  <!-- TIMELINE: do NOT change timeline code, just force LTR on the section -->
+  <section id="timeline" class="timeline-section" dir="ltr">
     <div class="container">
       <div class="timeline">
         <article class="card">
@@ -41,6 +45,7 @@
             </p>
           </div>
         </article>
+
         <article class="card">
           <img class="card-img" src="img/2.jpg" alt="Microprocessor milestone image" />
           <div class="card-body">
@@ -58,6 +63,7 @@
             </p>
           </div>
         </article>
+
         <article class="card">
           <img class="card-img" src="img/3.jpg" alt="8086 processor milestone image" />
           <div class="card-body">
@@ -75,7 +81,8 @@
           </div>
         </article>
 
-        <!-- Card 4: 1985 -->
+        <article class="card">
+          <img class="card-img" src="img/4.jpg" alt="386 processor milestone image" />
           <div class="card-body">
             <h2 class="year">1985</h2>
             <h3 class="card-title">386 Processor</h3>
@@ -92,7 +99,8 @@
           </div>
         </article>
 
-        <!-- Card 5: 2006 -->
+        <article class="card">
+          <img class="card-img" src="img/5.png" alt="Peak GHG emissions milestone image" />
           <div class="card-body">
             <h2 class="year">2006</h2>
             <h3 class="card-title">Peak GHG Emissions</h3>
@@ -110,7 +118,8 @@
           </div>
         </article>
 
-        <!-- Card 6: 2020 -->
+        <article class="card">
+          <img class="card-img" src="img/6.png" alt="RISE strategy milestone image" />
           <div class="card-body">
             <h2 class="year">2020</h2>
             <h3 class="card-title">RISE Strategy</h3>
@@ -126,7 +135,8 @@
           </div>
         </article>
 
-        <!-- Card 7: 2022 -->
+        <article class="card">
+          <img class="card-img" src="img/7.png" alt="Net-zero commitment milestone image" />
           <div class="card-body">
             <h2 class="year">2022</h2>
             <h3 class="card-title">Net-Zero By 2040</h3>
@@ -142,9 +152,10 @@
           </div>
         </article>
 
-        <!-- Card 8: 2023 -->
         <article class="card">
           <img class="card-img" src="img/8.png" alt="Renewable energy milestone image" />
+          <div class="card-body">
+            <h2 class="year">2023</h2>
             <h3 class="card-title">Renewable Electricity</h3>
             <p class="card-summary">
               The company achieves 99% renewable electricity usage worldwide,
@@ -158,9 +169,10 @@
           </div>
         </article>
 
-        <!-- Card 9: 2024 -->
         <article class="card">
           <img class="card-img" src="img/9.png" alt="Sustainability summit milestone image" />
+          <div class="card-body">
+            <h2 class="year">2024</h2>
             <h3 class="card-title">Sustainability Summit</h3>
             <p class="card-summary">
               Intel hosts its first Sustainability Summit, uniting suppliers,
@@ -174,11 +186,196 @@
             </p>
           </div>
         </article>
-
-      </div><!-- /timeline -->
-
-      <!-- Hint text inside the timeline section -->
-      <p class="hint">Scroll to view timeline • Hover over cards to learn more!</p>
+      </div>
 
       <p class="hint">Scroll to view timeline • Hover over cards to learn more!</p>
-    </div
+    </div>
+  </section>
+
+  <!-- PILLARS: English text, keep LTR so punctuation behaves -->
+  <section class="py-5" aria-labelledby="pillars-title" dir="ltr">
+    <div class="container">
+      <header class="text-center mb-4">
+        <h2 id="pillars-title" class="fw-bold mb-2">Key Sustainability Pillars</h2>
+        <p class="text-muted mb-0">Three focus areas that support long-term impact.</p>
+      </header>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="h-100 p-4 border rounded-3 bg-body">
+            <h3 class="h5 fw-semibold mb-2">Climate Action</h3>
+            <p class="text-muted mb-0">
+              Reduce emissions through renewable electricity, efficiency, and cleaner operations.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="h-100 p-4 border rounded-3 bg-body">
+            <h3 class="h5 fw-semibold mb-2">Water Stewardship</h3>
+            <p class="text-muted mb-0">
+              Conserve and restore water resources, especially in water-stressed regions.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="h-100 p-4 border rounded-3 bg-body">
+            <h3 class="h5 fw-semibold mb-2">Circular Economy</h3>
+            <p class="text-muted mb-0">
+              Reduce waste and keep materials in use longer through recycling and smarter design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER: keep LTR for English form behavior + punctuation -->
+  <section class="py-5 border-top" aria-labelledby="newsletter-title" dir="ltr">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 col-xl-7">
+
+          <div class="p-4 p-md-5 border rounded-3 bg-body">
+            <h2 id="newsletter-title" class="fw-bold mb-1">Subscribe to Intel Sustainability Newsletter</h2>
+            <p id="newsletter-help" class="text-muted mb-4">
+              Get periodic updates on climate action, water stewardship, and responsible manufacturing.
+            </p>
+
+            <form class="vstack gap-4" action="#" method="post" aria-describedby="newsletter-help">
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="h5 fw-semibold mb-3">Your Info</legend>
+
+                <div class="vstack gap-3">
+                  <div>
+                    <label for="sub-name" class="form-label">Full name</label>
+                    <input type="text" id="sub-name" name="name" class="form-control"
+                           autocomplete="name" placeholder="Your name" required />
+                  </div>
+
+                  <div>
+                    <label for="sub-email" class="form-label">Email address</label>
+                    <input type="email" id="sub-email" name="email" class="form-control"
+                           autocomplete="email" inputmode="email" placeholder="name@example.com"
+                           required aria-required="true" />
+                    <div class="form-text">We’ll never share your email.</div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                      <label for="sub-country" class="form-label">Country/Region</label>
+                      <input type="text" id="sub-country" name="country" class="form-control"
+                             autocomplete="country-name" placeholder="e.g., United States" />
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label for="sub-zip" class="form-label">ZIP / Postal code</label>
+                      <input type="text" id="sub-zip" name="postal" class="form-control"
+                             autocomplete="postal-code" placeholder="e.g., 85281" />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <hr class="my-0" />
+
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="h5 fw-semibold mb-3">Newsletter Preferences</legend>
+
+                <div class="vstack gap-3">
+                  <div>
+                    <label for="sub-frequency" class="form-label">Delivery frequency</label>
+                    <select id="sub-frequency" name="frequency" class="form-select" required>
+                      <option value="" selected disabled>Choose frequency</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                      <option value="event-based">Only for major announcements</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <div class="form-label mb-2">Topics you care about</div>
+                    <div class="vstack gap-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="topic-climate" name="topics" value="climate" />
+                        <label class="form-check-label" for="topic-climate">Climate action & emissions</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="topic-water" name="topics" value="water" />
+                        <label class="form-check-label" for="topic-water">Water stewardship</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="topic-waste" name="topics" value="waste" />
+                        <label class="form-check-label" for="topic-waste">Waste reduction & circular economy</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="topic-supply" name="topics" value="supply-chain" />
+                        <label class="form-check-label" for="topic-supply">Supplier & manufacturing initiatives</label>
+                      </div>
+                    </div>
+                    <div class="form-text">Pick any that apply (optional).</div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <hr class="my-0" />
+
+              <fieldset class="border-0 p-0 m-0">
+                <legend class="h5 fw-semibold mb-3">Consent</legend>
+
+                <div class="vstack gap-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sub-consent" name="consent" required />
+                    <label class="form-check-label" for="sub-consent">
+                      I agree to receive emails about Intel sustainability updates.
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sub-policy" name="policy" required />
+                    <label class="form-check-label" for="sub-policy">
+                      I’ve read the Privacy Policy and understand how my data will be used.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="d-grid mt-2">
+                <button type="submit" class="btn btn-primary btn-lg">Sign Me Up</button>
+              </div>
+
+              <p class="visually-hidden" aria-live="polite" id="newsletter-status"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER: English, so LTR -->
+  <footer class="py-4 border-top" dir="ltr">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-start align-items-md-center">
+        <p class="mb-0 text-muted">
+          © <span id="year"></span> Intel Corporation. All rights reserved.
+        </p>
+
+        <nav aria-label="Footer links">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="#">Terms of Use</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="#newsletter-title">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
